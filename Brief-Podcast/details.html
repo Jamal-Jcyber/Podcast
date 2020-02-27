@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoadCast Channel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo2 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo2">
+        <source src="vd/tn.mp4" type="video/mp4">
+    </video>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <!-- LOGO -->
+                    <img class="logo" src="image/logo.png" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <!-- NavBar -->
+                    <nav></nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <h1 style="text-align: center;">Full Stack (Web Developement F/B) Radio</h1>
+    <section id="Podcast-Lists">
+        <div class="container">
+            
+            <div id ='PodcastLists' class="row center-xs center-sm center-md center-lg">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 start-xs start-sm start-md start-lg">
+                    <article>
+                        <img src="https://skillvalue.com/blog/wp-content/uploads/2015/03/ruby-mini-logo.png" alt="Podcast" srcset="">
+                        <header>
+                            <h1>JAVASCRIPT</h1>
+                            <h3>javascript</h3>
+                            <p>Description</p>
+                            <h5>Categorie</h5>
+                            <!-- <a href="details.html">View More >></a> -->
+                            <p>Tag</p>
+                        </header>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <hr>
+            <br>
+        <hr>
+    </div>
+
+    <section id="Episods-Lists">
+        <div class="container">
+            
+            <div id ='EpisodLists' class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                   <img src="https://skillvalue.com/blog/wp-content/uploads/2015/03/ruby-mini-logo.png" alt="episode">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <time>Date</time>
+                    <h4>Episode ?!</h4>
+                    <h2>Episode Name</h2>
+                    <p>Description</p>
+                    <audio src="Audio/1.mp3" controls></audio>
+                    <p>Invited</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="container">
+        <hr>
+            <br>
+        <hr>
+    </div>
+
+
+    <section id="Form-List">
+        <div class="container">
+            <h1 style="text-align: center;">Adding New Episode ?!</h1>
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <!-- <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="text" class="form-control" id="time" aria-describedby="emailHelp" placeholder="Time of The Episode">
+                        </div> -->
+                        <div class="form-group">
+                            <label for="episodename">Episode Name</label>
+                            <input type="text" class="form-control" id="episodename" placeholder="Episode Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="descr">Description</label>
+                            <textarea class="form-control" id="descr" rows='3'></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="lien">Link</label>
+                            <input type="file" class="form-control" id="lien" placeholder="Link of The Audio">
+                        </div>
+                        <div class="form-group">
+                            <label for="tag">Tag</label>
+                            <input type="text" class="form-control" id="tag" placeholder="Tag">
+                        </div>
+                        <div class="form-group">
+                            <label for="invite">Invited</label>
+                            <input type="text" class="form-control" id="invite" placeholder="Invited">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="return PushNewEpisode()">Add New Episode</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="Javascript/main.js"></script>
+
+</body>
+</html>

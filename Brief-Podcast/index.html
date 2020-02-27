@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoadCast Channel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="myVideo">
+
+        <source src="vd/podcast.mp4" type="video/mp4">
+        
+    </video>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <!-- LOGO -->
+                    <img class="logo" src="image/logo.png" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <!-- NavBar -->
+                    <nav></nav>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <h1 style="text-align: center;">Full Stack (Web Developement F/B) Radio</h1>
+    <section id="Podcast-Lists">
+        <div class="container">
+            
+            <div id ='PodcastLists' class="row center-xs center-sm center-md center-lg">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 start-xs start-sm start-md start-lg">
+                    <article>
+                        <img src="https://assist-software.net/sites/default/files/promoted_images/blog/javascript_logo.png" alt="Podcast" srcset="">
+                        <header>
+                            <h1>JAVASCRIPT</h1>
+                            <h3>javascript</h3>
+                            <p>Description</p>
+                            <h5>Categorie</h5>
+                            <a href="details.html">View More >></a>
+                            <p>Tag</p>
+                        </header>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 start-xs start-sm start-md start-lg">
+                    <article>
+                        <img src="https://memorynotfound.com/wp-content/uploads/java-logo1.png" alt="Podcast" srcset="">
+                        <header>
+                            <h1>JAVA</h1>
+                            <h3>java</h3>
+                            <p>Description</p>
+                            <h5>Categorie</h5>
+                            <a href="details.html">View More >></a>
+                            <p>Tag</p>
+                        </header>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 start-xs start-sm start-md start-lg">
+                    <article>
+                        <img class="python" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png" alt="Podcast" srcset="">
+                        <header>
+                            <h1>PYTHON</h1>
+                            <h3>python</h3>
+                            <p>Description</p>
+                            <h5>Categorie</h5>
+                            <a href="details.html">View More >></a>
+                            <p>Tag</p>
+                        </header>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 start-xs start-sm start-md start-lg">
+                    <article>
+                        <img class="ruby" src="https://skillvalue.com/blog/wp-content/uploads/2015/03/ruby-mini-logo.png" alt="Podcast" srcset="">
+                        <header>
+                            <h1>RUBY</h1>
+                            <h3>ruby</h3>
+                            <p>Description</p>
+                            <h5>Categorie</h5>
+                            <a href="details.html">View More >></a>
+                            <p>Tag</p>
+                        </header>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <hr>
+            <br>
+        <hr>
+    </div>
+    
+
+    <section id="Form-List">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="form-group">
+                            <label for="url">Url Image</label>
+                            <input type="text" class="form-control" id="url" aria-describedby="emailHelp" placeholder="Enter Url Here">
+                            <small id="emailHelp" class="form-text text-muted">chose Your Image From The Web.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="podcastname">Podcast Name</label>
+                            <input type="text" class="form-control" id="podcastname" placeholder="Podcast Name">
+                            <small id="emailHelp" class="form-text text-muted">chose Your IName For This New Podcast.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="podcastorname">Podcastor Name</label>
+                            <input type="text" class="form-control" id="podcastorname" placeholder="Podcastor Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea class="form-control" id="description" rows='3'></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="categorie">Categorie</label>
+                            <input type="text" class="form-control" id="categorie" placeholder="Categorie">
+                        </div>
+                        <div class="form-group">
+                            <label for="link">View More</label>
+                            <input type="text" class="form-control" id="link" placeholder="View More">
+                        </div>
+                        <div class="form-group">
+                            <label for="tag">Tag</label>
+                            <input type="text" class="form-control" id="tag" placeholder="Tag">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="return PushNewPoadcast()">Add New Podcast</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+        
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="Javascript/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+#myVideo{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+
+}
+.logo{
+	height: 101p;
+	width: 158px;
+}
+.python{
+	height: 101p;
+	width: 158px;
+	margin: 39px 0px 0px 0px;
+}
+.ruby{
+	margin: 39px 0px 0px 0px;
+}
+
